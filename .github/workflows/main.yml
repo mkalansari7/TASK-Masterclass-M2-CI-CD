@@ -21,3 +21,12 @@ jobs:
 
       - name: Test code with pytest
         run: pytest .
+
+      - name: Lint with Black
+        run: black --check .
+
+      - name: Lint with isort
+        run: isort --check-only .
+
+      - name: Lint with flake8
+        run: flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics .
