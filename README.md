@@ -8,7 +8,7 @@ Time to dive into GitHub actions.
 2. Add a `.github/` folder in the root directory of the repository.
 3. Add a `workflows/` folder inside the `.github/` folder.
 4. Add a `main.yml` file inside of `workflows/`.
-5. Setup python using https://github.com/actions/setup-python (make sure to install `dev-requirements.txt` and not `requirements.txt`).
+5. Setup python using https://github.com/actions/setup-python.
 6. Add a pipeline to run the tests.
 7. Add another pipeline to "Lint with Black", using `black --check .`.
 8. Add another pipeline to "Lint with isort", using `isort --check-only .`.
